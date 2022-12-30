@@ -1,0 +1,60 @@
+.hébergements-section h2{
+    font-size: 22px;
+    font-weight: 700;
+    
+    
+}
+.hébergements-section img{
+    height: 124px;
+    width: 246px;
+}
+.hébergements-section{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+main{
+    
+    height: 1000px;
+    margin-left: 50px;
+    
+}
+section{
+    width: 100%;
+    
+}
+.hébergements-section i{
+    color: #0065FC;
+    height: 12px;
+}
+.hébergements-section h3{
+    font-size: 16px;
+}
+.canebière{
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    box-shadow: 0px 2px 1px rgb(0, 0, 0, 0.1) ;
+}
+.canebière img{
+    border-radius: 20px 20px 0px 0px;
+}
+.port{
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    box-shadow: 0px 2px 1px rgb(0, 0, 0, 0.1) ;
+}
+.port img{
+    border-radius: 20px 20px 0px 0px;
+}
+.mouettes{
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    box-shadow: 0px 2px 1px rgb(0, 0, 0, 0.1) ;
+}
+.mouettes img{
+    border-radius: 20px 20px 0px 0px;
+}
