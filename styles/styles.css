@@ -35,9 +35,7 @@ nav{
 }
 a:hover{
     color: #0065FC;
-    border-top: solid;
-    border-color: #0065FC;
-    padding-top: 46px;
+    
 }
 .boutons, a{
     text-decoration: none;
