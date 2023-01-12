@@ -156,6 +156,7 @@ form i{
     }
     .famous-rooms{
         display: flex;
+        flex-direction: row;
         
     }
     .actm img{
