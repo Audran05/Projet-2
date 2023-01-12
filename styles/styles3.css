@@ -1,19 +1,18 @@
 footer{
-    margin-top:61px;
     background: #F2F2F2;
-    width: 1289px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
     display: flex;
-    align-items: flex-start;
-    gap: 200px;    
-    padding-left:  70px;
-    padding-top: 45px;  
-    padding-bottom: 45px;
-    margin-left: 50px;
-    
+    align-items: stretch;
+    gap: 300px;
+    padding-top: 20px;
+    margin-top: 60px;
 }
 .about{
     display: flex;
     flex-direction: column;
+    margin-left: 70px;
 }
 .host{
     display: flex;
