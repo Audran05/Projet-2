@@ -23,20 +23,17 @@ body {
     display : flex;
     gap : 60px;
     }
+    .boutons :hover{
+        border-top: #0065FC solid;
+        top: 50pxpx;
+    }
     .boutons div {
     width : 100%;
     }
     .a-button {
     font-weight : 400;
     }
-    .a-button :hover {
-    border-top : 2px solid #0065FC;
-    padding-top : 2em;
-    }
-    .h-button :hover {
-    border-top : 2px solid #0065FC;
-    padding-top : 2em;
-    }
+    
     a:hover {
     color : #0065FC;
     }
@@ -68,7 +65,7 @@ body {
     border-top : 14px;
     border-bottom : 14px;
     }
-    .filtres {
+    .filters {
     display : flex;
     align-items : center;
     font-weight : 700;
@@ -76,21 +73,27 @@ body {
     justify-content : flex-start;
     gap : 40px;
     }
-    .filtres, ul {
+    .b-filters{
+        display: flex;
+        
+        
+    }
+    .filters, ul {
     display : flex;
     }
-    .filtres button {
+    .filters button {
     border : #D9D9D9 solid 2px;
     border-radius : 25px;
     padding : 8px;
+    margin-right: 50px;
     font-size : 17px;
     font-weight : 700;
     }
-    .filtres i {
+    .filters i {
     margin : 5px;
     color : #0065FC;
     }
-    .filtres button:hover {
+    .filters button:hover {
     background : #DEEBFF;
     }
     .infos {
@@ -115,6 +118,8 @@ body {
     form {
     display : flex;
     align-items : center;
+    justify-content: flex-start;
+    
     }
     form i {
     border : #F2F2F2 solid 1px;
@@ -126,7 +131,7 @@ body {
     .search-text :active {
     border : none;
     }
-    .hÃ©bergements-section h2 {
+    .h-section h2 {
     font-size : 22px;
     font-weight : 700;
     }
@@ -137,10 +142,10 @@ body {
     .h-section {
     background-color : rgb(242, 242, 242);
     border : rgb(242, 242, 242) solid;
-    width : auto;
-    padding : 50px;
+    
+    padding : 40px;
     border-radius : 20px;
-    height : auto;
+    
     }
     main {
     margin : 0 auto;
@@ -155,7 +160,8 @@ body {
     .mid-page {
     width : 100%;
     display : flex;
-    gap : 40px;
+    gap: 40px;
+    
     }
     main i {
     color : rgb(0, 101, 252);
@@ -169,11 +175,13 @@ body {
     border-radius : 20px;
     background-color : white;
     box-shadow : 0 2px 1px rgb(0, 0, 0, 0.1);
-    min-width : 246px;
+    
     }
     .h-rooms img {
     border-radius : 20px 20px 0 0;
+    
     }
+    
     .show-button {
     font-family : Raleway;
     font-style : normal;
@@ -225,6 +233,9 @@ body {
     display : flex;
     flex-direction : column;
     gap : 33px;
+    }
+    .f-rooms h3{
+        font-size: 16px;
     }
     .activities img {
     height : 444.508px;
@@ -305,9 +316,11 @@ body {
         .famous-rooms {
         display : flex;
         flex-direction : row;
+        flex-wrap: wrap;
         }
         .f-rooms {
         min-width : 240px;
+        
         }
         .f-rooms h3 {
         font-size : 14px;
@@ -325,6 +338,7 @@ body {
         }
         .populaire-section {
         width : 100%;
+        width: calc(100% - 60px);
         }
         .famous-title {
         justify-content : space-between;
@@ -339,7 +353,7 @@ body {
 @media screen and ( max-width: 768px ){
     body {
         padding : 20px;
-        margin : 0;
+        margin : 0 auto;
         }
         .mid-page {
         flex-wrap : wrap-reverse;
@@ -371,29 +385,37 @@ body {
         .rooms {
         display : flex;
         flex-direction : column;
+        align-items: center;
         width : fit-content;
         width : 100%;
         }
-        .rooms img {
-        width : 335px;
+        .rooms img{
+            width: 335px;
+        }
+        .h-rooms{
+            width: fit-content;
         }
         .activities {
         flex-direction : column;
         gap: 24px;
+        align-items: center;
         }
         .act img {
         width : 334px;
         }
         .act {
         min-width : 334px;
+        
         }
         .actm {
         margin : 0 auto;
-        padding : 30px;
+        
+        
+        
         }
         .foot {
         flex-direction : column;
-        margin-left : 70px;
+        
         }
         nav {
         flex-direction : column;
@@ -403,16 +425,12 @@ body {
         .boutons {
         width : 100%;
         }
-        .h-button :hover {
-        border-top : none;
-        border-bottom : 2px solid #0065FC;
-        padding-top : 2em;
+        .boutons :hover{
+            border-bottom: #0065FC solid;
+            padding-bottom:25px ;
+            border-top: none;
         }
-        .a-button :hover {
-        border-top : none;
-        border-bottom : 2px solid #0065FC;
-        padding-top : 2em;
-        }
+        
         .search-bar {
         text-align : center;
         }
@@ -422,4 +440,27 @@ body {
         .search {
         width : 100%;
         }
+       
+        
+        .b-filters{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+
+        }
+        .b-filters button{
+            width: 100%;
+            margin: 15px;
+        }
+        .filters{
+            width: 100%;
+        }
+        form{
+            margin: 0 auto;
+            width: 100%;
+            max-width: 768px;
+            justify-content: center;
+        }
 }
+   
+    
