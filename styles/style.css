@@ -175,8 +175,17 @@ body {
     border-radius : 20px;
     background-color : white;
     box-shadow : 0 2px 1px rgb(0, 0, 0, 0.1);
+    margin-right: 30px;
     
     }
+   .first-line{
+    display: flex;
+    justify-content: space-between;
+   }
+   .second-line{
+    display: flex;
+    justify-content: space-between;
+   }
     .h-rooms img {
     border-radius : 20px 20px 0 0;
     
@@ -196,10 +205,11 @@ body {
     }
     .rooms {
     display : flex;
-    justify-content : space-evenly;
+    justify-content : space-between;
     row-gap : 30px;
     padding-top : 20px;
     flex-flow : wrap;
+    
     }
     .populaire-section {
     background-color : rgb(242, 242, 242);
@@ -218,12 +228,20 @@ body {
     }
     .f-rooms {
     display : flex;
-    gap : 20px;
     border-radius : 20px;
     background-color : white;
     box-shadow : 0 2px 1px rgb(0, 0, 0, 0.1);
-    min-width : 343px;
+    width : 343px;
     }
+    .f-rooms .rooms-bottom{
+        padding-left: 10px;
+    }
+    .rooms-bottom p{
+        margin: 0px;
+        
+    }
+ 
+  
     .f-rooms img {
     border-radius : 20px 0 0 20px;
     padding-left : 5px;
@@ -236,6 +254,11 @@ body {
     }
     .f-rooms h3{
         font-size: 16px;
+        margin-bottom: 0;
+    }
+    .f-rooms p{
+        margin-top: 5px;
+        
     }
     .activities img {
     height : 444.508px;
@@ -308,6 +331,13 @@ body {
         }
         .h-section {
         width : 100%;
+        width: calc(100% - 80px);
+        }
+        .first-line{
+            flex-wrap: wrap;
+        }
+        .second-line{
+            flex-wrap: wrap;
         }
         .populaire-section img {
         width : 106px;
@@ -316,11 +346,12 @@ body {
         .famous-rooms {
         display : flex;
         flex-direction : row;
-        flex-wrap: wrap;
+        
+        gap: 1rem;
         }
         .f-rooms {
-        min-width : 240px;
-        
+            width: 30%;
+            min-width: 243px;
         }
         .f-rooms h3 {
         font-size : 14px;
@@ -349,6 +380,11 @@ body {
         
    
 }
+@media screen and ( max-width: 980px ){
+    .famous-rooms{
+        flex-wrap: wrap;
+    }
+}
 
 @media screen and ( max-width: 768px ){
     body {
@@ -361,6 +397,9 @@ body {
         .famous-rooms {
         display : flex;
         flex-direction : column;
+        }
+        .f-rooms{
+            width: 100%;
         }
         
         .f-rooms h3 {
@@ -389,6 +428,14 @@ body {
         width : fit-content;
         width : 100%;
         }
+       .first-line{
+        flex-direction : column;
+        align-items: center;
+       }
+       .second-line{
+        flex-direction : column;
+        align-items: center;
+       }
         .rooms img{
             width: 335px;
         }
