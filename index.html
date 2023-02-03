@@ -16,8 +16,8 @@
         <nav>
             <img class="logo" src="images/booki.png" alt="logo">
             <div class="boutons">
-               <div class="h-button"> <a href="#">Hébergements</a></div>
-               <div class="a-button"> <a href="#">Activités</a></div> 
+               <div class="h-button"> <a id="h-sec" href="#">Hébergements</a></div>
+               <div class="a-button"> <a id="act-sec" href="#">Activités</a></div> 
             </div>
         </nav>
         <div class="search-bar">
@@ -52,15 +52,14 @@
 
     <main>
         <section class="mid-page">
-            <div class="h-section">
+            <div class="h-section" #h-section>
                 <h2 class="left">
                     Hébergements à Marseille
                 </h2>
-                <div class="rooms">
-                    <div class="first-line">
+                <div class="h-column">
+                    <div class="rows">
                         <div class="h-rooms">
-                            <div class="rooms-top">
-                                <img src="images/canebière-large.jpg" alt="">
+                            <div id="top-left" class="rooms-top">
                             </div>
                             <div class="rooms-bottom">
                                 <h3>
@@ -76,8 +75,7 @@
                             </div>
                         </div>
                         <div class="h-rooms">
-                            <div class="rooms-top">
-                                <img src="images/port-large.jpg" alt="">
+                            <div id="top-mid" class="rooms-top">
                             </div>
                             <div class="rooms-bottom">
                                 <h3>
@@ -94,8 +92,7 @@
                             
                         </div>
                         <div class="h-rooms">
-                            <div class="rooms-top">
-                                <img src="images/mouette-large.jpg" alt="">
+                            <div id="top-right" class="rooms-top">
                             </div>
                             <div class="rooms-bottom">
                                 <h3>
@@ -111,10 +108,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="second-line">
+                    <div class="rows">
                         <div class="h-rooms">
-                            <div class="rooms-top">
-                                <img src="images/mer.jpg" alt="">
+                            <div id="mid-left" class="rooms-top">
+                                
                             </div>
                             <div class="rooms-bottom">
                                 <h3>
@@ -131,8 +128,7 @@
                             
                         </div>
                         <div class="h-rooms">
-                            <div class="rooms-top">
-                                <img src="images/panier.jpg" alt="">
+                            <div id="mid-mid" class="rooms-top">
                             </div>
                             <div class="rooms-bottom">
                                 <h3>
@@ -149,8 +145,7 @@
                            
                         </div>
                         <div class="h-rooms">
-                            <div class="rooms-top">
-                            <img src="images/amina.jpg" alt="">
+                            <div id="mid-right" class="rooms-top">
     
                             </div>
                             <div class="rooms-bottom">
@@ -184,7 +179,7 @@
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
                 <div class="famous-rooms">
-                    <div class="f-rooms">
+                    <div class="f-rooms" id="top">
                         <div class="rooms-top">
                             <img src="images/matin.jpg" alt="">
                         </div>
@@ -205,7 +200,7 @@
                         </div>
                         
                     </div>
-                    <div class="f-rooms">
+                    <div class="f-rooms" id="mid">
                         <div class="rooms-top">
                             <img src="images/coeur.jpg" alt="">
                         </div>
@@ -226,7 +221,7 @@
                             
                         </div>
                     </div>
-                    <div class="f-rooms">
+                    <div class="f-rooms" id="low">
                         <div class="rooms-top">
                             <img src="images/bleu-blanc.jpg" alt="">
                         </div>
@@ -249,34 +244,47 @@
                 </div>
             </div>
         </section>
-        <section class="actm">
+        <section class="actm" #act-section >
                 <h2>
                     Activités à Marseille
                 </h2>
             <div class="activities">
                 <div class="act">
-                    <img src="images/oldport.jpg" alt="">
-                    <h3>
+                    <div id="a-one">
+                    </div>
+                    <div>
+                        <h3>
                         Vieux-Port
-                    </h3>
+                        </h3>
+                    </div>
                 </div>
                 <div class="act">
-                    <img src="images/fort.jpg" alt="">
-                    <h3>
+                    <div id="a-two">
+                    </div>
+                    <div>
+                        <h3>
                         Fort de Pomègues
-                    </h3>
+                        </h3>
+                    </div>
                 </div>
                 <div class="act">
-                    <img src="images/national.jpg" alt="">
-                    <h3>Parc national des Calanques </h3>
+                    <div id="a-three">
+                    </div>
+                    <div>
+                        <h3>
+                        Parc national des Calanques
+                        </h3>
+                    </div>
                 </div>
                 <div class="act">
-                    <img src="images/dame.jpg" alt="">
-                    <h3>
+                    <div id="a-four">
+                    </div>
+                    <div>
+                        <h3>
                         Notre-Dame-de-la-Garde
-                    </h3>
+                        </h3>
+                    </div>
                 </div>
-            </div>
               
         </section>
     </main>

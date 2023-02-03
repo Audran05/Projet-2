@@ -3,6 +3,7 @@ body {
     margin : 0;
     padding : 0 50px;
     background-color : #FFFFFF;
+    scroll-behavior: smooth;
     }
     .logo {
     height : 19px;
@@ -25,7 +26,7 @@ body {
     }
     .boutons :hover{
         border-top: #0065FC solid;
-        top: 50pxpx;
+        padding-top: 30px;
     }
     .boutons div {
     width : 100%;
@@ -33,7 +34,6 @@ body {
     .a-button {
     font-weight : 400;
     }
-    
     a:hover {
     color : #0065FC;
     }
@@ -75,8 +75,6 @@ body {
     }
     .b-filters{
         display: flex;
-        
-        
     }
     .filters, ul {
     display : flex;
@@ -119,7 +117,6 @@ body {
     display : flex;
     align-items : center;
     justify-content: flex-start;
-    
     }
     form i {
     border : #F2F2F2 solid 1px;
@@ -142,10 +139,9 @@ body {
     .h-section {
     background-color : rgb(242, 242, 242);
     border : rgb(242, 242, 242) solid;
-    
     padding : 40px;
     border-radius : 20px;
-    
+    margin-right: 40px;
     }
     main {
     margin : 0 auto;
@@ -160,8 +156,7 @@ body {
     .mid-page {
     width : 100%;
     display : flex;
-    gap: 40px;
-    
+    /* gap: 40px; */
     }
     main i {
     color : rgb(0, 101, 252);
@@ -175,22 +170,95 @@ body {
     border-radius : 20px;
     background-color : white;
     box-shadow : 0 2px 1px rgb(0, 0, 0, 0.1);
-    margin-right: 30px;
-    
+    /* margin-right: 30px; */
+    max-width: 246px;
+    margin: 5px;
     }
-   .first-line{
-    display: flex;
-    justify-content: space-between;
-   }
-   .second-line{
-    display: flex;
-    justify-content: space-between;
-   }
-    .h-rooms img {
-    border-radius : 20px 20px 0 0;
-    
+    .h-rooms i{
+        margin-top: 10px;
     }
+    #top i{
+        margin-top: 70px;
+    }
+    #mid i{
+        margin-top: 52px;
+    }
+    #low i{
+        margin-top: 70px;
+    }
+   .rows{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    /* padding-bottom: 10px; */
+    /* margin-right: 18px; */
+   }
+  
+   
     
+    #top-left{
+        background-image: url("/images/canebiere-large.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        min-width: 246px;
+        height: 124px;
+        border-radius : 20px 20px 0 0;
+    }
+    #top-mid{
+        background-image: url("/images/port-large.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        min-width: 246px;
+        height: 124px;
+        border-radius : 20px 20px 0 0;
+    }
+    #top-right{
+        background-image: url("/images/mouette-large.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        min-width: 246px;
+        height: 124px;
+        border-radius : 20px 20px 0 0;
+    }
+    #mid-left{
+        background-image: url("/images/mer.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        min-width: 246px;
+        height: 124px;
+        border-radius : 20px 20px 0 0;
+    }
+    #mid-mid{
+        background-image: url("/images/panier.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        min-width: 246px;
+        height: 124px;
+        border-radius : 20px 20px 0 0;
+    }
+    #mid-right{
+        background-image: url("/images/amina.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        min-width: 246px;
+        height: 124px;
+        border-radius : 20px 20px 0 0;
+
+    }
+
+
     .show-button {
     font-family : Raleway;
     font-style : normal;
@@ -203,13 +271,15 @@ body {
     .left {
     display : inline;
     }
-    .rooms {
+    .h-column {
     display : flex;
-    justify-content : space-between;
-    row-gap : 30px;
+    justify-content: space-around;
+    /* row-gap : 30px; */
+    flex-direction: column;
     padding-top : 20px;
-    flex-flow : wrap;
-    
+    /* flex-flow : wrap; */
+    width: 100%;
+    /* background: red; */
     }
     .populaire-section {
     background-color : rgb(242, 242, 242);
@@ -238,10 +308,7 @@ body {
     }
     .rooms-bottom p{
         margin: 0px;
-        
     }
- 
-  
     .f-rooms img {
     border-radius : 20px 0 0 20px;
     padding-left : 5px;
@@ -258,14 +325,48 @@ body {
     }
     .f-rooms p{
         margin-top: 5px;
-        
     }
-    .activities img {
-    height : 444.508px;
-    width : 302px;
+   
+    
+    #a-one{
+        background-image: url("/images/oldport.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        min-width: 302px;
+        height: 444.508px;
+        border-radius : 20px 20px 0 0;
     }
-    .act img {
-    border-radius : 20px 20px 0 0;
+    #a-two{
+        background-image: url("/images/fort.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        min-width: 302px;
+        height: 444.508px;
+        border-radius : 20px 20px 0 0;
+    }
+    #a-three{
+        background-image: url("/images/national.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        min-width: 302px;
+        height: 444.508px;
+        border-radius : 20px 20px 0 0;
+    }
+    #a-four{
+        background-image: url("/images/dame.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        min-width: 302px;
+        height: 444.508px;
+        border-radius : 20px 20px 0 0;
     }
     .activities {
     display : flex;
@@ -276,9 +377,7 @@ body {
     border : white solid 5px;
     box-shadow : 0 2px 1px rgb(0, 0, 0, 0.1);
     }
-    .act img {
-    border-radius : 20px 20px 0 0;
-    }
+   
     .famous-title {
     display : flex;
     align-items : center;
@@ -320,25 +419,28 @@ body {
     footer a {
     margin-bottom : 12px;
     }
-
-
 @media screen and ( max-width: 992px ) {
     body {
         padding : 0 73px;
+        }
+        #top i{
+            margin-top: 50px;
+        }
+        #mid i{
+            margin-top: 65px;
+        }
+        #low i{
+            margin-top: 65px;
         }
         .mid-page {
         flex-wrap : wrap;
         }
         .h-section {
         width : 100%;
-        width: calc(100% - 80px);
+        /* width: calc(100% - 80px); */
+        padding: 10px;
         }
-        .first-line{
-            flex-wrap: wrap;
-        }
-        .second-line{
-            flex-wrap: wrap;
-        }
+        
         .populaire-section img {
         width : 106px;
         height : 144px;
@@ -346,7 +448,6 @@ body {
         .famous-rooms {
         display : flex;
         flex-direction : row;
-        
         gap: 1rem;
         }
         .f-rooms {
@@ -360,16 +461,31 @@ body {
         .f-rooms p {
         font-size : 13px;
         }
-        .act {
-        max-width : 182px;
+        .act{
+            min-width: 182px;
         }
-        .act img {
-        width : 182px;
-        height : 211px;
+        
+    
+        #a-one{
+            min-width: 182px;
+            height:267px ;
+        }
+        #a-two{
+            min-width: 182px;
+            height:267px ;
+        }
+        #a-three{
+            min-width: 182px;
+            height:267px ;
+        }
+        #a-four{
+            min-width: 182px;
+            height:267px ;
         }
         .populaire-section {
         width : 100%;
-        width: calc(100% - 60px);
+        /* width: calc(100% - 60px); */
+        margin-top: 20px;
         }
         .famous-title {
         justify-content : space-between;
@@ -377,15 +493,12 @@ body {
         .foot {
         margin-right : 150px;
         }
-        
-   
-}
+
 @media screen and ( max-width: 980px ){
     .famous-rooms{
         flex-wrap: wrap;
     }
 }
-
 @media screen and ( max-width: 768px ){
     body {
         padding : 20px;
@@ -401,7 +514,6 @@ body {
         .f-rooms{
             width: 100%;
         }
-        
         .f-rooms h3 {
         font-size : 18px;
         }
@@ -421,48 +533,29 @@ body {
         border : none;
         width : 100%;
         }
-        .rooms {
-        display : flex;
-        flex-direction : column;
-        align-items: center;
-        width : fit-content;
-        width : 100%;
-        }
-       .first-line{
-        flex-direction : column;
-        align-items: center;
-       }
-       .second-line{
-        flex-direction : column;
-        align-items: center;
-       }
-        .rooms img{
-            width: 335px;
-        }
         .h-rooms{
-            width: fit-content;
+            width: 100%;
+            max-width: 100%;
         }
+        .rows{
+            flex-direction: column;
+        }
+     
+       
+        
         .activities {
         flex-direction : column;
         gap: 24px;
-        align-items: center;
+        
         }
-        .act img {
-        width : 334px;
-        }
+       
         .act {
-        min-width : 334px;
-        
+        min-width : 100%;
+        width: 100%;
         }
-        .actm {
-        margin : 0 auto;
-        
-        
-        
-        }
+       
         .foot {
         flex-direction : column;
-        
         }
         nav {
         flex-direction : column;
@@ -477,7 +570,6 @@ body {
             padding-bottom:25px ;
             border-top: none;
         }
-        
         .search-bar {
         text-align : center;
         }
@@ -487,13 +579,10 @@ body {
         .search {
         width : 100%;
         }
-       
-        
         .b-filters{
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
-
         }
         .b-filters button{
             width: 100%;
@@ -508,6 +597,4 @@ body {
             max-width: 768px;
             justify-content: center;
         }
-}
-   
-    
+    }
