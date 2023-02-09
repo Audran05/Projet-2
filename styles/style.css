@@ -140,8 +140,9 @@ body {
     background-color : rgb(242, 242, 242);
     border : rgb(242, 242, 242) solid;
     padding : 40px;
+    
     border-radius : 20px;
-    margin-right: 40px;
+   
     }
     main {
     margin : 0 auto;
@@ -156,6 +157,8 @@ body {
     .mid-page {
     width : 100%;
     display : flex;
+    gap: 20px;
+    
     /* gap: 40px; */
     }
     main i {
@@ -493,7 +496,7 @@ body {
         .foot {
         margin-right : 150px;
         }
-
+    }
 @media screen and ( max-width: 980px ){
     .famous-rooms{
         flex-wrap: wrap;
@@ -568,6 +571,7 @@ body {
         .boutons :hover{
             border-bottom: #0065FC solid;
             padding-bottom:25px ;
+            padding-top: 0;
             border-top: none;
         }
         .search-bar {
@@ -597,4 +601,5 @@ body {
             max-width: 768px;
             justify-content: center;
         }
+
     }
