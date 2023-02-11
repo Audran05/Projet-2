@@ -19,6 +19,7 @@ body {
     display : flex;
     justify-content : space-between;
     align-items : center;
+    
     }
     .boutons {
     display : flex;
@@ -26,7 +27,7 @@ body {
     }
     .boutons :hover{
         border-top: #0065FC solid;
-        padding-top: 30px;
+        
     }
     .boutons div {
     width : 100%;
@@ -200,7 +201,7 @@ body {
    
     
     #top-left{
-        background-image: url("/images/canebiere-large.jpg");
+        background-image: url("../images/canebiere-large.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -210,7 +211,7 @@ body {
         border-radius : 20px 20px 0 0;
     }
     #top-mid{
-        background-image: url("/images/port-large.jpg");
+        background-image: url("../images/port-large.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -220,7 +221,7 @@ body {
         border-radius : 20px 20px 0 0;
     }
     #top-right{
-        background-image: url("/images/mouette-large.jpg");
+        background-image: url("../images/mouette-large.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -230,7 +231,7 @@ body {
         border-radius : 20px 20px 0 0;
     }
     #mid-left{
-        background-image: url("/images/mer.jpg");
+        background-image: url("../images/mer.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -240,7 +241,7 @@ body {
         border-radius : 20px 20px 0 0;
     }
     #mid-mid{
-        background-image: url("/images/panier.jpg");
+        background-image: url("../images/panier.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -250,7 +251,7 @@ body {
         border-radius : 20px 20px 0 0;
     }
     #mid-right{
-        background-image: url("/images/amina.jpg");
+        background-image: url("../images/amina.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -332,7 +333,7 @@ body {
    
     
     #a-one{
-        background-image: url("/images/oldport.jpg");
+        background-image: url("../images/oldport.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -342,7 +343,7 @@ body {
         border-radius : 20px 20px 0 0;
     }
     #a-two{
-        background-image: url("/images/fort.jpg");
+        background-image: url("../images/fort.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -352,7 +353,7 @@ body {
         border-radius : 20px 20px 0 0;
     }
     #a-three{
-        background-image: url("/images/national.jpg");
+        background-image: url("../images/national.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -362,7 +363,7 @@ body {
         border-radius : 20px 20px 0 0;
     }
     #a-four{
-        background-image: url("/images/dame.jpg");
+        background-image: url("../images/dame.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
